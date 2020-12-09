@@ -140,7 +140,7 @@ class Piece {
           }
         }
       }
-      //check if the piece moving is a pawn doing a doble
+      //check if the piece moving is a pawn doing a double
       //and in case it is, set empassant to true
 
       if (this.type == "p" && !this.hasMoved) {
@@ -250,15 +250,10 @@ function updateDrag(click) {
               piece.dragging = true;
               getLegalMoves(piece, legalMoves);
               for (move of legalMoves) {
-                console.log("move:", move);
-                console.log("move of legal",piece);
                  if (putsYouInCheck(piece, move)) {
                    auxArray.push(move);
-                   console.log("pushing:", move);
                  }
               }
-              console.log(legalMoves);
-              console.log(auxArray);
               for (move of auxArray) {
                 legalMoves.splice(legalMoves.indexOf(move), 1);
               }
@@ -866,22 +861,11 @@ function putsYouInCheck(piece, move) {
   return false;
 }
 
-/* copia i pezzi, non li cancellare, invece di fare lo
-slice butta via da qualche parte, non toccare pezzi
-finchè non hai finito i contolli, e non fare copia
-e incolla dei pezzi qui dento o mandi tutto a troie,
-fallo dove richiami i pezzi */
 //in piece logic I can probably improve the alg simply by
 //breaking out of for loops when I already have an answer
 
 
-/*missing stuff: (the first few are very important)
-  consider check in legal moves
-
-  this shit is so hard, I have no idea how to do it since
-  javascript cannot fucken copy and array, it has to destroy it
-
-
+/*missing stuff: 
   --------------------kinda important--------------------
   mate
   stalemate (up to here is probably required)
