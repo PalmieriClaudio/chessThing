@@ -6,3 +6,5 @@ The main difficulty with the project is that I'm trying to run it entirely in JS
 For now I'll procede to clean and improve the code and then I'll move to different projects, but I plan to eventually come back to this one and finish it.
 
 To play with the project and what it's been built so far, the current version can be found in the gitHub page corresponding to this project.
+
+I also plan to work on making the project prettier in the next few days.
