@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(140, 140, 140);
+}
+div {
+  font-size:30pt;
+  position: absolute;
+  top: 8px;
+  right: 200px;
+}
+
+canvas {
+  display: block;
+}
