@@ -10,3 +10,5 @@ To play with the project and what has been built so far, the current version can
 I also plan to work on making the project prettier in the next few days.
 
 On a last note, it's still possible to castle through and out of check, even though that's supposed to be illegal, that's something I forgot to add and will add in the near future.
+
+The project is currently on halt while I work on different projects as my time is currently limited because of my job.
